@@ -1,0 +1,25 @@
+ul a,a:visited,a:hover{    
+    color: black;   
+
+}
+
+ul{
+    list-style-type:none;
+    display: table-row;
+    vertical-align: middle;
+    
+    
+}
+
+ul#footer-rs li{
+    display:  inline;
+    margin: 0.5em;
+}
+
+.footer{
+    align-items: center;
+}
+
+#footer p {
+    text-align: center;
+}
