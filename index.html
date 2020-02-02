@@ -12,15 +12,19 @@
     <link rel="stylesheet" href="./CSS/estilo.css">
   </head>
   <body>
-    <!-- Separamos el contenido en 3 contenedores, cabecera, cuerpo y pi&eacute; -->
+    <!-- Esta página la he creado desde 0 usando la plantilla básica que genera Visual Studio Code y con la ayuda de la documentación de https://www.w3schools.com/bootstrap4 y https://getbootstrap.com/  -->
+    <!-- Separamos el contenido en 3 contenedores, cabecera, cuerpo y pie; -->
     <div name="header" class="card-header sticky-top azulsuave" aria-hidden="true">
-        <!-- Creamos un bot&oacute;n que se a&ntilde;adir&aacute; para expandir el men&uacute; cuando sea cargado desde una pantalla peque&ntilde;a -->
+        <!-- Creamos un botón que se añadirá; para expandir el menú cuando sea cargado desde una pantalla pequeña -->
         <button class="navbar-toggler navbar-toggler-right d-md-none" type="button" data-toggle="collapse" data-target="#menu" aria-expanded="false"
             aria-controls="menu"><span class=" fa fa-bars"></span>
-        </button> <div name="menu" id="menu" class="dont-collapse-sm collapse">    
-            <nav class="nav nav-pills justify-content-end  mb-3 flex-column flex-sm-row ">
-               
-              <a type="button" class="nav-link active" data-toggle="pill" data-target="#sobremi">SOBRE MI <span class="sr-only">(current)</span></a>          
+        </button>
+        <!-- Le indicamos al menú que no se collapse en pantallas grandes, creamos el menú en un contenedor fijo en la parte superior de la página que será siempre visible -->
+        <div name="menu" id="menu" class="dont-collapse-sm collapse">    
+          <!-- Creamos el menú con sus enlaces, le indicamos su tamaño, su comportamiento y su alineación en la página -->
+            <nav class="nav nav-pills justify-content-end  mb-3 flex-column flex-sm-row ">               
+              <!-- Marcamos este item como activo, esto es solo para el menú, para el contenido deberemos hacerlo en el contenedor correspondiente al item seleccionado -->
+              <a type="button" class="nav-link active" data-toggle="pill" data-target="#sobremi">SOBRE MI <span class="sr-only">(current)</span></a>
               <a type="button" class="nav-link" data-toggle="pill" data-target="#cualidades">CUALIDADES</a>        
               <a type="button" class="nav-link" data-toggle="pill" data-target="#curriculum">CURRICULUM</a>        
               <a type="button" class="nav-link" data-toggle="pill" data-target="#aptitudes">APTITUDES</a>                  
@@ -28,10 +32,15 @@
               <a type="button" class="nav-link" data-toggle="pill" data-target="#contacto">CONTACTO</a>      
       </nav></div>
     </div>
+    <!-- Creamos el contenedor del contenido y le indicamos que muestre los contenedores como pestañas (uno sobre otro) -->
     <div name="contenido" id="contenido" class="tab-content" >
-      <div name="sobremi" id="sobremi" class="tab-pane fade show active"><img src="./IMG/yo.jpg" alt="Foto mia" class="float-right img-fluid" width="200" height="150"><p>Me llamo Antonio Castilla Coronado, tengo 39 a&ntilde;os y soy un fan&aacute;tico de la inform&aacute;tica.</p><p>Soy T&eacute;cnico Superior en Desarrollo de Aplicaciones Multiplataforma, t&eacute;cnico en Microinform&aacute;tica y 
+      <!-- Marcamos el contenedor como activo como hicimos en el menú -->
+      <div name="sobremi" id="sobremi" class="tab-pane fade show active">
+        <!-- Añadimos la imágen y le indicamos por medio de bootrap que la muestre a la derecha de la pantalla (mientras pueda) -->
+        <img src="./IMG/yo.jpg" alt="Foto mia" class="float-right img-fluid" width="200" height="150"><p>Me llamo Antonio Castilla Coronado, tengo 39 a&ntilde;os y soy un fan&aacute;tico de la inform&aacute;tica.</p><p>Soy T&eacute;cnico Superior en Desarrollo de Aplicaciones Multiplataforma, t&eacute;cnico en Microinform&aacute;tica y 
         redes y futuro t&eacute;cnico superior en Desarrollo de Aplicaciones Web.</p><p>Tengo m&aacute;s de diez a&ntilde;os de experiencia en el sector profesional y m&aacute;s de treinta a&ntilde;os experimentando y aprendiendo con ordenadores. </p><p>Poseo conocimientos 
         sobre hardware, software, programaci&oacute;n y nuevas tecnolog&iacute;as; con predisposici&oacute;n para aprender lo necesario para superar cualquier reto que se me presente. </p><p>Este es un ejemplo de p&aacute;gina web realizada con html, bootstrap y CSS.</p></div>
+      <!-- Contenedor con las cualidades   -->
       <div name="cualidades" id="cualidades" class="tab-pane fade"><ul>
         <li>Alta capacidad de aprendizaje de aplicaciones inform&aacute;ticas.</li>
         <li>Iniciativa</li>
@@ -55,6 +64,7 @@
 
         <li>Orientaci&oacute;n al cliente: un cliente contento con el servicio es un cliente que vuelve, sin clientes no hay negocio . Hay que tener contentos a los clientes para que vuelvan y hagan uso del boca a boca para traer m&aacute;s clientes.</li>
       </ul></div>
+      <!-- Contenedor con el currículum (copy & paste de mi curriculum en linkedin) -->
       <div name="curriculum" id="curriculum" class="tab-pane fade">
       <p><h5>CURRICULUM VITAE - Web curr&iacute;culum</h5><br /><br />Domicilio: 30007 - Murcia <br />Fecha de nacimiento : 10/16/1980<br />Carnet y veh&iacute;culo : B1 - Coche propio<br /><br />
       <br /><h>Objetivo profesional</h><br /><br />Programaci&oacute;n, hardware, reparaci&oacute;n de ordenadores.<br /><br /><br />
@@ -87,6 +97,7 @@
       <h5>Otros datos de inter&eacute;s</h5><br /><br />Capacidad y flexibilidad para formarse en otros campos relacionados con la inform&aacute;tica.<br />
       Participaci&oacute;n en radio online como Dj, montaje y mantenimiento del servidor de Radio Online (Icecast2/Airtime) bajo Ubuntu Server, emisi&oacute;n en vivo y programada.</p>
       </div>
+      <!-- Este apartado lo he cambiado por el de premios, ya que no dispongo de premios en diseño (ni creo que los obtenga) -->
       <div name="otros" id="otros" class="tab-pane fade">
         <p><h4>Otros conocimientos:</h4><br>
           <br>
@@ -101,15 +112,18 @@
         <br>
         Capacidad y flexibilidad para formarme en otros campos relacionados con la inform&aacute;tica.<br>
         Participaci&oacute;n en radio online como Dj, montaje y mantenimiento del servidor de Radio Online (Icecast2/Airtime) bajo Ubuntu Server, emisi&oacute;n en vivo y programada.</p></div>
+      <!-- En este contenedor pongo las aptitudes, así como muestro algunos trabajos con un Carousel describiendo las imágenes que se muestran -->
       <div name="aptitudes" id="aptitudes" class="tab-pane fade"><p>Desarrollador de aplicaciones m&oacute;viles, de escritorio y web.</p><p>
       Conocimientos avanzados de varios lenguajes de programaci&oacute;n: C#, Java, php, JavaScript, VisualBasic, Xamarin.</p><p>
     Manejo de programas de dise&ntilde;o 3D: SolidWorks, AutoCAD, Autodesk Inventor, 3D Studio Max.</p><p>Administraci&oacute;n de sistemas: Windows Server (con AD), Windows y Linux.</p>
     <div id="carousel" class="carousel slide" data-ride="carousel">
+      <!-- Creamos la lista que controlará el carousel -->
       <ol class="carousel-indicators">
         <li data-target="#carousel" data-slide-to="0" class="active"></li>
         <li data-target="#carousel" data-slide-to="1"></li>
         <li data-target="#carousel" data-slide-to="2"></li>
       </ol>
+      <!-- Añadimos los items del carousel -->
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
           <img class="img-responsive" src="./IMG/cap.gif" alt="ImoaWin">
@@ -132,7 +146,7 @@
             <p>Plano realizado en autocad usando proyecci&oacute;n 3D.</p>
           </div>
         </div>
-      
+      <!-- Configurmaos los botones del carousel y le añadimos el fondo oscuro para que se vea con una imágen clara -->
       <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -143,9 +157,12 @@
       </a></div>
     </div>  
       </div>
+      <!-- Formulario responsive que cambia los campos de sitio según el tamaño de la pantalla -->
       <div name="contacto" id="contacto" class="tab-pane fade">
         <form name="formulario" action="">
+          <!-- El formulario lo pongo en linea de manera que si cabe, se mostrarán en la misma línea el nombre y el email -->
           <div class="form-group form-inline ">
+            <!-- Le indicamos a los campos el tamaño y la separión entre ellos -->
             <label for="nombre" class="mr-sm-2">Nombre</label>
             <input type="text" name="nombre" id="nombre" class="form-control mr-sm-4" placeholder="Introduzca su nombre" >            
             <label for="email" class="mr-sm-2">eMail</label>
@@ -161,9 +178,10 @@
         <p>Si lo prefiere, puede contactar a trav&eacute;s correo electr&oacute;nico <a href="mailto:shoke07@gmail.com">shoke07@gmail.com</a></p>
       </div>
     </div>
+    <!-- Se pedía una página de Inicio con mi nombre y el enlace a las redes sociales, he considerado que sería más practico que estuviera en todas las páginas a pie de página -->
     <div name="footer" id="footer" class=" fixed-bottom azulsuave"><ul id="footer-rs">
-        <li ><a href="http://www.linkedin.com/in/antonio-castilla-coronado"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-        <li ><a href="http://www.linkedin.com/in/antonio-castilla-coronado"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li ><a href="https://www.linkedin.com/in/antonio-castilla-coronado" target="new"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li ><a href="https://www.facebook.com/DjShoke/" target="new"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
       </ul>
       <p >Antonio Castilla Coronado &copy;2020</p>
     </div>
@@ -172,5 +190,5 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  </body>  
 </html>

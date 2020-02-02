@@ -1,38 +1,47 @@
+/* Con este comando pretendemos salvar que el pie de página nos tape el contenido (hay otras maneras de hacerlo, como por ejemplo con el contenedor) */
 body{
   padding-bottom: 80px;
 }
 
+/* Color de los menús */
 .azulsuave{
   background-color:rgb(166, 203, 245);
 }
 
+/* Margen que aplicaremos sobre el contenedor "contenido" para dar un pequeño margen (en pantallas más grandes lo sobrescribimos más abajo) */
 #contenido{
   margin: 50px;
 }
 
+/* Quitamos el color a los enlaces */
 ul a,a:visited,a:hover{    
     color: black;   
 }
 
+/* Le indicamos que no muestre los puntos en las listas y que comience a 20 pixeles del borde izquierdo */
 #footer { 
   list-style-type:none;
   padding-left: 20px;
 }
 
+/* Alineamos el texto al centro */
 #footer p {
   text-align: center;
 }
 
+/* Le indicamos que muestre los elementos de lista en el pie, en línea, con fuente grande y con separación entre los elementos */
 ul#footer-rs li{
   display: inline;
   font-size: x-large;
   margin: 0.5em;    
 }
 
+/* Le indicamos que el texto del carousel debe ser negro */
 .carousel-caption{
   color: black;
 }
 
+/* Le indicamos que centre el contenido del carousel a la página */
 #carousel{
   text-align: center;
   margin: auto;
