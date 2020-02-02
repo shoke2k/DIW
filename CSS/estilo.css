@@ -1,9 +1,13 @@
 body{
-    padding-bottom: 80px;
+  padding-bottom: 80px;
+}
+
+.azulsuave{
+  background-color:rgb(166, 203, 245);
 }
 
 #contenido{
-    margin: 50px;
+  margin: 50px;
 }
 
 ul a,a:visited,a:hover{    
@@ -11,44 +15,51 @@ ul a,a:visited,a:hover{
 }
 
 #footer { 
-    list-style-type:none;
-    padding-left: 20px;
+  list-style-type:none;
+  padding-left: 20px;
 }
 
 #footer p {
-    text-align: center;
+  text-align: center;
 }
 
 ul#footer-rs li{
-    display: inline;
-    margin: 0.5em;    
+  display: inline;
+  font-size: x-large;
+  margin: 0.5em;    
 }
 
 .carousel-caption{
-    color: black;
+  color: black;
 }
-/*
-#carousel {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-  
-  .carousel-control.left {
-    margin-left: -25px;
-  }
-  
-  .carousel-control.right {
-    margin-right: -25px;
-  }*/
-  #carousel img {
-    margin: auto;
-  }
+
+#carousel{
+  text-align: center;
+  margin: auto;
+}
+
 
 
 @media (min-width: 768px) {
     .collapse.dont-collapse-sm {
       display: block;
       height: auto !important;
-      visibility: visible;
+      visibility: visible;      
+    }
+
+    #contenido{
+      margin: 50px 15%;
+    }
+
+    #footer { 
+      padding-left: 10%;
+    }
+
+    .form-inline .form-control{
+      width: 30%;
+    }
+
+    #menu {
+      padding-right: 5%;
     }
   }
